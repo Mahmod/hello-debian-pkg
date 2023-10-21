@@ -9,21 +9,12 @@ sudo apt-get update
 sudo apt-get install build-essential dh-make devscripts lintian fakeroot
 ```
 
-### 2. Create Your Project Directory
 
-Create a directory for your project:
-
-```sh
-mkdir hello-world
-cd hello-world
-```
-
-
-### 3. Create the Changelog File
+### 2. Create the Changelog File
 
 Run `dch --create` and follow the prompts to create an initial changelog entry. This will create a file named `changelog`.
 
-### 4. Build the Package
+### 3. Build the Package
 
 Go back to the root of your project directory (`hello-world`), and build the package:
 
@@ -33,7 +24,7 @@ debuild -us -uc
 
 This will create several files in the parent directory. Among them will be a `.deb` file named something like `hello-world_1.0-1_amd64.deb`.
 
-### 5. Install and Test the Package
+### 4. Install and Test the Package
 
 Install the package:
 
