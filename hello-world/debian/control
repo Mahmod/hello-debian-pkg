@@ -1,0 +1,13 @@
+Source: hello-world
+Section: utils
+Priority: optional
+Maintainer: Your Name <your.email@example.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: <your-website-or-github-repo>
+
+Package: hello-world
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A simple Hello World program
+ A longer description of your program goes here.
